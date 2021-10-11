@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fira Sans", sans-serif;
+  background-color: rgb(13, 17, 23);
+}
+
+.container {
+  height: 100vh;
+}
+
+.header {
+    margin: 30px;
+  padding-top: 20PX ;
+  height: 15%;
+  font-size: 6rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #7DE685;
+  font-family: 'ZCOOL KuaiLe', cursive;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  height: 50%;
+  align-items: center;
+  text-align: center;
+  color: #9ad6ff;
+  font-size: 4rem;
+  flex-wrap: wrap;
+
+  [class^="title"]{
+      color: #DC7B6E;
+  }
+  &__days {
+      background-color: rgb(9, 11, 16);
+      padding: 20px 50px;
+      border-radius: 10px;
+      margin: 30px;
+  }
+
+  &__hour {
+    background-color: rgb(9, 11, 16);;
+    padding: 20px 40px;
+    border-radius: 10px;
+    margin: 30px;
+  }
+
+  &__min {
+    background-color: rgb(9, 11, 16);;
+    padding: 20px 20px;
+    border-radius: 10px;
+    margin: 30px;
+  }
+
+  &__sec {
+    background-color: rgb(9, 11, 16);;
+    padding: 20px 20px;
+    border-radius: 10px;
+    margin: 30px;
+  }
+}
+
+@media (max-width: 590px){
+    .header{
+        font-size: 3.4rem;
+    }
+   
+}
+
+@media (max-width: 495px){
+    .header{
+        font-size: 3.0rem;
+        line-height: 1.3;
+    }
+    .main{
+        font-size: 2.5em; 
+    }
+}
+
+@media (max-width: 400px){
+    .header{
+        font-size: 2.0rem;
+        line-height: 1.3;
+    }
+    .main{
+        font-size: 1.5em; 
+    }
+}
